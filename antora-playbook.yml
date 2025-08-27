@@ -1,13 +1,14 @@
 site:
   title: Hackfables
   start_page: hackfables::preface.adoc
+  url: https://hackfables.org
 content:
   sources:
     - url: .
       branches: HEAD
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/main/raw/build/ui-bundle.zip?job=bundle
+    url: https://cdn.jsdelivr.net/npm/@antora/ui-default@3.1.7/dist/ui-bundle.zip
     snapshot: true
 output:
   dir: build/site
