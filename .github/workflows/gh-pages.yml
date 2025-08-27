@@ -34,6 +34,18 @@ jobs:
         run: |
           npm run build:pdf
           npm run build:epub
+      - name: Flatten pages to site root and set Preface as home
+        run: |
+          set -e
+          SITE=build/site
+          COMP=hackfables
+          # copy component HTML pages to root for shorter URLs
+          for f in "$SITE/$COMP"/*.html; do
+            base=$(basename "$f")
+            cp "$f" "$SITE/$base"
+          done
+          # make root index.html be the Preface
+          cp "$SITE/$COMP/preface.html" "$SITE/index.html"
       - name: Add CNAME and nojekyll
         run: |
           echo hackfables.org > build/site/CNAME
