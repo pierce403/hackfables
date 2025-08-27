@@ -1,6 +1,6 @@
 # Hackfables
 
-Short parables for software engineers, published as a book-like site via Antora and exportable to HTML, PDF, and EPUB.
+Short parables for hackers, published as a book-like site via Antora and exportable to HTML, PDF, and EPUB.
 
 ## Prerequisites
 
