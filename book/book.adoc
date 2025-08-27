@@ -1,0 +1,16 @@
+= Hackfables
+Pierce E. et al.
+:doctype: book
+:revnumber: 0.1.0
+:revdate: {docdate}
+:sectnums:
+:toc: left
+:icons: font
+:source-highlighter: rouge
+:chapter-signifier: Chapter
+
+include::../modules/ROOT/pages/preface.adoc[]
+
+include::../modules/ROOT/pages/parable-one.adoc[]
+
+include::../modules/ROOT/pages/parable-two.adoc[]

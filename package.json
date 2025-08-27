@@ -1,0 +1,17 @@
+{
+  "name": "hackfables",
+  "version": "0.1.0",
+  "private": true,
+  "license": "CC-BY-SA-4.0",
+  "scripts": {
+    "build:site": "npx antora antora-playbook.yml",
+    "preview": "npx http-server build/site -p 8080 -c-1",
+    "clean": "rimraf build"
+  },
+  "devDependencies": {
+    "@antora/cli": "^3.1.7",
+    "@antora/site-generator-default": "^3.1.7",
+    "http-server": "^14.1.1",
+    "rimraf": "^5.0.5"
+  }
+}

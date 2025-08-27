@@ -1,0 +1,11 @@
+= The Patchwork Programmer
+
+A programmer inherited a codebase stitched together by many hands.
+
+They asked, "Should I rewrite it all?"
+
+The mentor replied, "Mend what tears, reinforce what frays, and add lining where it rubs. A new quilt looks fine on the bed, but it does not keep you warm until it is tested by winter."
+
+== Moral
+
+Refactor along the path of change. Wholesale rewrites are luxuries seldom afforded.

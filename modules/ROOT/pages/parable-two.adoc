@@ -1,0 +1,13 @@
+= The Monolith and the Ant
+
+An architect split a monolith into many tiny services.
+
+Traffic came, and the team grew weary of the latency between them.
+
+They asked a wise SRE, "How small should a service be?"
+
+The SRE answered, "As small as it must be to evolve without ceremony, and as large as it must be to carry its own weight."
+
+== Moral
+
+Boundaries exist to serve change, not fashion.

@@ -1,0 +1,3 @@
+* xref:preface.adoc[Preface]
+* xref:parable-one.adoc[The Patchwork Programmer]
+* xref:parable-two.adoc[The Monolith and the Ant]
