@@ -1,5 +1,5 @@
 site:
-  title: Hackfables
+  title: Hack Fables
   start_page: hackfables::preface.adoc
   url: https://hackfables.org
 content:
@@ -10,5 +10,6 @@ ui:
   bundle:
     url: ./ui/ui-bundle.zip
     snapshot: true
+  supplemental_files: ./ui-overrides
 output:
   dir: build/site

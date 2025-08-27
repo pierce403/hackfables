@@ -1,4 +1,4 @@
-= Hackfables
+= Hack Fables
 :doctype: book
 :revnumber: 0.1.0
 :revdate: {docdate}

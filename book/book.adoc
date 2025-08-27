@@ -1,4 +1,4 @@
-= Hackfables
+= Hack Fables
 Pierce E. et al.
 :doctype: book
 :revnumber: 0.1.0
