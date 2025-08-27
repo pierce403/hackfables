@@ -27,6 +27,16 @@ jobs:
       - name: Install Node deps
         run: |
           npm ci || npm install
+      - name: Build Antora UI default bundle
+        run: |
+          set -e
+          mkdir -p build/ui
+          git clone --depth 1 https://gitlab.com/antora/antora-ui-default.git .antora-ui
+          cd .antora-ui
+          npm ci || npm install
+          npm run build
+          cp build/ui-bundle.zip ../build/ui/ui-bundle.zip
+          cd ..
       - name: Build site with Antora
         run: |
           npx antora antora-playbook.yml
