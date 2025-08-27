@@ -8,7 +8,7 @@ content:
       branches: HEAD
 ui:
   bundle:
-    url: ./build/ui/ui-bundle.zip
+    url: ./ui/ui-bundle.zip
     snapshot: true
 output:
   dir: build/site
