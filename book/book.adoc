@@ -14,3 +14,5 @@ include::../modules/ROOT/pages/preface.adoc[]
 include::../modules/ROOT/pages/parable-one.adoc[]
 
 include::../modules/ROOT/pages/parable-two.adoc[]
+
+include::../modules/ROOT/pages/hamster-ferret-firesheep.adoc[]
