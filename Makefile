@@ -12,7 +12,6 @@ all: site pdf epub
 
 install:
 	npm ci || npm install
-	bundle install || true
 
 site:
 	$(NODE_BIN)/antora antora-playbook.yml || npx antora antora-playbook.yml
@@ -20,10 +19,10 @@ site:
 html: site
 
 pdf:
-	bundle exec asciidoctor-pdf -r asciidoctor-pdf -D $(BUILD_DIR) $(BOOK_FILE) || asciidoctor-pdf -D $(BUILD_DIR) $(BOOK_FILE)
+	npm run build:pdf
 
 epub:
-	bundle exec asciidoctor-epub3 -D $(BUILD_DIR) $(BOOK_FILE) || asciidoctor-epub3 -D $(BUILD_DIR) $(BOOK_FILE)
+	npm run build:epub
 
 preview: site
 	npx http-server $(SITE_DIR) -p 8080 -c-1

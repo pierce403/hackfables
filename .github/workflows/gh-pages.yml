@@ -30,6 +30,14 @@ jobs:
       - name: Build site with Antora
         run: |
           npx antora antora-playbook.yml
+      - name: Build PDF and EPUB
+        run: |
+          npm run build:pdf
+          npm run build:epub
+      - name: Add CNAME and nojekyll
+        run: |
+          echo hackfables.org > build/site/CNAME
+          touch build/site/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

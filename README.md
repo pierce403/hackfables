@@ -5,13 +5,11 @@ Short parables for software engineers, published as a book-like site via Antora 
 ## Prerequisites
 
 - Node.js 18+ (or 20+ recommended)
-- Ruby 3.x with Bundler
 
 ## Install
 
 ```bash
 npm install
-bundle install
 ```
 
 ## Build
@@ -22,16 +20,16 @@ bundle install
 npm run build:site
 ```
 
-- PDF (book/book.pdf):
+- PDF (build/book.pdf):
 
 ```bash
-make pdf
+npm run build:pdf
 ```
 
-- EPUB (book/book.epub):
+- EPUB (build/book.epub):
 
 ```bash
-make epub
+npm run build:epub
 ```
 
 - Clean build artifacts:
@@ -64,8 +62,8 @@ make site preview
 include::../modules/ROOT/pages/your-parable.adoc[]
 ```
 
-- Submit a Pull Request. CI will build the site and deploy to GitHub Pages on merge to `main`.
+- Submit a Pull Request. CI will build the site and deploy to GitHub Pages on merge to `main`. The site will be available at https://hackfables.org.
 
 ## License
 
-Content is licensed under [CC BY-SA 4.0](LICENSE). Code/config is MIT unless noted otherwise.
+All content and configuration in this repository are licensed under CC0 1.0 Universal (see `LICENSE`).

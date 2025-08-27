@@ -6,12 +6,19 @@
   "scripts": {
     "build:site": "npx antora antora-playbook.yml",
     "preview": "npx http-server build/site -p 8080 -c-1",
-    "clean": "rimraf build"
+    "clean": "rimraf build",
+    "build:pdf": "node scripts/build-pdf.js",
+    "build:epub": "node scripts/build-epub.js"
   },
   "devDependencies": {
     "@antora/cli": "^3.1.7",
     "@antora/site-generator-default": "^3.1.7",
+    "@asciidoctor/core": "^3.0.3",
     "http-server": "^14.1.1",
+    "puppeteer": "^23.4.1",
     "rimraf": "^5.0.5"
+  },
+  "dependencies": {
+    "epub-gen": "^0.1.0"
   }
 }
