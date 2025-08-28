@@ -1,3 +1,4 @@
+:page-title: The Hamster, the Ferret, and the FireSheep
 == The Hamster, the Ferret, and the FireSheep
 
 [.page.hero-page]
