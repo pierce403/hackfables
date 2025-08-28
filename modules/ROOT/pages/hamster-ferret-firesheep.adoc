@@ -1,6 +1,12 @@
 = The Hamster, the Ferret, and the FireSheep
 
+[.page.hero-page]
+image::cobblestones.png[role=fullbleed]
+
+[.hero-caption]
 The town of Cinderbrook was a cozy place, with chimneys puffing smoke and cobblestone lanes that curled like ribbons between cottages. It was a cheerful town, though not always the most careful. Windows were often left wide open, pies cooling on sills, and cookies resting unattended on counters.
+
+<<<
 
 Hamster and Ferret lived there too. The pair were known for their mischief: sneaking through gardens, chasing cats up trees, and sometimes swiping shiny buttons just for fun. Yet for all their troublemaking, they truly wanted to help keep Cinderbrook safe. They watched, they noticed, and they worried when others did not.
 
