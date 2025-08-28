@@ -8,6 +8,11 @@ The town of Cinderbrook was a cozy place, with chimneys puffing smoke and cobble
 
 <<<
 
+[.page]
+image::hamster-ferret.png[role=fullbleed]
+
+<<<
+
 Hamster and Ferret lived there too. The pair were known for their mischief: sneaking through gardens, chasing cats up trees, and sometimes swiping shiny buttons just for fun. Yet for all their troublemaking, they truly wanted to help keep Cinderbrook safe. They watched, they noticed, and they worried when others did not.
 
 At night, they darted like shadows with whiskers, slipping past open windows to pluck warm cookies from kitchen counters. It wasn’t greed that drove them but urgency. Proof to show the townsfolk that danger was real. Still, no one noticed.
