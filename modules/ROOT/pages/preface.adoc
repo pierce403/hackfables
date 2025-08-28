@@ -7,7 +7,7 @@
 
 == Preface
 
-Welcome to Hack Fables, a collection of short parables for software engineers.
+Welcome to Hack Fables, a collection of short parables for hackers.
 
 These stories are designed to be read quickly but pondered slowly. Each parable captures a common theme or lesson from engineering practice: trade-offs, teamwork, clarity, humility, and craft.
 
