@@ -29,21 +29,15 @@ jobs:
           npm ci || npm install
       - name: Build site with Antora
         run: |
-          npx antora antora-playbook.yml
+          npm run build:site
       - name: Build PDF and EPUB
         run: |
           npm run build:pdf
           npm run build:epub
-      - name: Flatten pages to site root and set Preface as home
+      - name: Set Preface as home page
         run: |
-          set -e
-          SITE=build/site
-          COMP=hackfables
-          for f in "$SITE/$COMP"/*.html; do
-            base=$(basename "$f")
-            cp "$f" "$SITE/$base"
-          done
-          cp "$SITE/$COMP/preface.html" "$SITE/index.html"
+          cp build/site/hackfables/preface.html build/site/index.html
+          sed -i 's|<head|<head>\n  <base href="/hackfables/">|' build/site/index.html
       - name: Place PDF at site root
         run: |
           cp build/book.pdf build/site/HackFables.pdf
