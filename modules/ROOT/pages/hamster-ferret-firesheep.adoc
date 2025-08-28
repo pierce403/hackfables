@@ -8,16 +8,19 @@ The town of Cinderbrook was a cozy place, with chimneys puffing smoke and cobble
 
 <<<
 
-[.page]
+[.page.hero-page]
 image::hamster-ferret.png[role=fullbleed]
+
+[.hero-caption]
+Hamster and Ferret lived there too. The pair were known for their mischief: sneaking through gardens, chasing cats up trees, and sometimes swiping shiny buttons just for fun. Yet for all their troublemaking, they truly wanted to help keep Cinderbrook safe. They watched, they noticed, and they worried when others did not.
 
 <<<
 
-Hamster and Ferret lived there too. The pair were known for their mischief: sneaking through gardens, chasing cats up trees, and sometimes swiping shiny buttons just for fun. Yet for all their troublemaking, they truly wanted to help keep Cinderbrook safe. They watched, they noticed, and they worried when others did not.
-
 At night, they darted like shadows with whiskers, slipping past open windows to pluck warm cookies from kitchen counters. It wasn’t greed that drove them but urgency. Proof to show the townsfolk that danger was real. Still, no one noticed.
 
-They tried to warn everyone. The police polishing their badges, the baker dusting flour from his apron, even the mayor in his velvet chair. "Your cookies are being taken through open windows," they squeaked. But the townsfolk only chuckled and waved them away. Eventually, real criminals started taking valuable things from the houses of the townspeople through the same open windows. The townspeople were confused, but no one remembered the warnings from Hamster and Ferret.
+They tried to warn everyone. The police polishing their badges, the baker dusting flour from his apron, even the mayor in his velvet chair. "Your cookies are being taken through open windows," they squeaked. But the townsfolk only chuckled and waved them away.
+
+Eventually, real criminals started taking valuable things from the houses of the townspeople through the same open windows. The townspeople were confused, but no one remembered the warnings from Hamster and Ferret.
 
 Then one day, FireSheep arrived. FireSheep didn’t whisper to the grown-ups, nor pen letters to the mayor. Instead, FireSheep taught the town's children the trick. The children delighted in their newfound ability to collect free cookies whenever they wanted them.
 
