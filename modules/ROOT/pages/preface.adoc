@@ -9,6 +9,6 @@
 
 Welcome to Hack Fables, a collection of short parables for hackers.
 
-These stories are designed to be read quickly but pondered slowly. Each parable captures a common theme or lesson from engineering practice: trade-offs, teamwork, clarity, humility, and craft. They are ideally each represent real events or situations, distilled into easily digestible hacker folklore. Enjoy!
+These stories are designed to be read quickly but pondered slowly. Each parable captures a common theme or lesson from engineering practice: trade-offs, teamwork, clarity, humility, and craft.
 
-Contributions are welcome—see the project README for how to add your own parable.
+Contributions are welcome—see the project README for how to add your own parable.  They are ideally each represent real events or situations, distilled into easily digestible hacker folklore. The illustrations are also currently some fairly sloppy placeholders, so any contributions there would be greatly appreciated as well.
