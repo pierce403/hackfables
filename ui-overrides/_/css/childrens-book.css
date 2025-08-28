@@ -69,8 +69,12 @@ img.fullbleed {
   line-height: 1.6;
 }
 
-.hero-caption p {
-  font-size: 1.125rem !important; /* ~10% smaller */
+.openblock.page.hero-page .paragraph.hero-caption.small { /* role-sized caption */
+  font-size: 18px !important; /* 50% larger than 12px */
+  line-height: 1.5 !important;
+}
+.paragraph.hero-caption.small p {
+  font-size: inherit !important; /* inherit 12px from container */
   line-height: 1.6 !important;
   /* Outline for readability over images */
   -webkit-text-stroke: 0.5px rgba(0,0,0,0.6) !important;
