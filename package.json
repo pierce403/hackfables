@@ -4,7 +4,7 @@
   "private": true,
   "license": "CC-BY-SA-4.0",
   "scripts": {
-    "build:site": "npx antora antora-playbook.yml",
+    "build:site": "npx antora antora-playbook.yml && node scripts/post-deploy-fix.js",
     "preview": "npx http-server build/site -p 8080 -c-1",
     "clean": "rimraf build",
     "build:pdf": "node scripts/build-pdf.js",

@@ -60,6 +60,19 @@ The live site is served with a duplicated `hackfables/` directory at the webroot
 
 If you add new UI assets (CSS/JS) via `ui-overrides`, ensure they are available under `ui-overrides/css` (not just `ui-overrides/_/css`) so the production bundle can load them.
 
+### Root HTML duplication and `<base>` injection
+
+For nicer URLs, the GitHub Pages runner duplicates the HTML pages under `build/site/hackfables/` into the webroot. A post-build script injects `<base href="/hackfables/">` into the root copies so relative assets (like `_images/`) resolve correctly.
+
+- Local build does this automatically now via:
+
+```bash
+npm run build:site
+# runs Antora then scripts/post-deploy-fix.js
+```
+
+- If you maintain your own CI, run `node scripts/post-deploy-fix.js` after generating the site.
+
 ## Contributing parables
 
 - Add a new `.adoc` file under `modules/ROOT/pages/`.
