@@ -1,14 +1,29 @@
 = Hack Fables
-:doctype: book
-:revnumber: 0.1.0
-:revdate: {docdate}
-:sectnums:
-:toc: left
+:page-title: Hack Fables
+:page-role: landing
+:page-description: Short illustrated parables for hackers.
 
-== Preface
+[.landing-hero]
+--
+image::playing.png[Children playing in Cinderbrook,role=landing-illustration]
 
-Welcome to Hack Fables, a collection of short parables for hackers.
+[.landing-copy]
+Hack Fables is a collection of short illustrated parables for hackers.
 
-These stories are designed to be read quickly but pondered slowly. Each parable captures a common theme or lesson from engineering practice: trade-offs, teamwork, clarity, humility, and craft.
+[.landing-subcopy]
+Read them quickly, then let them sit with you. Each fable turns a familiar engineering lesson into a small story about trade-offs, teamwork, clarity, humility, and craft.
 
-Contributions are welcome—see the project README for how to add your own parable.  They are ideally each represent real events or situations, distilled into easily digestible hacker folklore. The illustrations are also currently some fairly sloppy placeholders, so any contributions there would be greatly appreciated as well.
+[.landing-actions]
+xref:hamster-ferret-firesheep.adoc[Read the first fable] link:../HackFables.pdf[Download PDF]
+--
+
+== Start Reading
+
+The first fable follows a small town, a pair of careful troublemakers, and a tool that made an invisible risk obvious to everyone.
+
+[.feature-link]
+xref:hamster-ferret-firesheep.adoc[The Hamster, the Ferret, and the FireSheep]
+
+== Contribute
+
+Contributions are welcome. The best additions are based on real events or situations, distilled into easily digestible hacker folklore. The illustrations are still early placeholders, so thoughtful visual contributions are welcome too.

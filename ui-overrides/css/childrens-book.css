@@ -1,9 +1,137 @@
 /* Children's-book style helpers for site, PDF, and EPUB */
 
 :root {
+  --book-ink: #182321;
+  --book-muted: #52605b;
+  --book-paper: #f5f7f1;
+  --book-surface: #fffdf8;
+  --book-line: #d7ded0;
+  --book-green: #183a37;
+  --book-teal: #2d6670;
+  --book-red: #a33d2a;
+  --book-gold: #d4a447;
   --page-max-width: 38rem;
   --page-margin-block: 3rem;
   --page-line-height: 1.7;
+}
+
+body.article {
+  background:
+    linear-gradient(90deg, rgba(45, 102, 112, 0.06) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(212, 164, 71, 0.08), transparent 18rem),
+    var(--book-paper);
+  background-size: 28px 28px, 100% 100%, auto;
+  color: var(--book-ink);
+}
+
+.navbar {
+  background: var(--book-green);
+  box-shadow: 0 2px 0 rgba(24, 35, 33, 0.16);
+}
+
+.navbar-brand .navbar-item:first-child {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.navbar-end .navbar-link,
+.navbar-end > .navbar-item {
+  color: #fffdf8;
+}
+
+.navbar-end > a.navbar-item:hover,
+.navbar-end .navbar-link:hover,
+.navbar-end .navbar-item.has-dropdown:hover .navbar-link {
+  background: rgba(255, 253, 248, 0.1);
+  color: #fff;
+}
+
+.navbar .button.is-primary {
+  background: var(--book-gold);
+  border: 0;
+  border-radius: 6px;
+  color: #1e251f;
+  font-weight: 700;
+  min-height: 2rem;
+}
+
+.navbar .button.is-primary:hover {
+  background: #e2b75c;
+  text-decoration: none;
+}
+
+.toolbar,
+.nav,
+.nav-panel-explore {
+  background: rgba(255, 253, 248, 0.92);
+}
+
+.toolbar {
+  box-shadow: 0 1px 0 var(--book-line);
+}
+
+.nav {
+  border-right: 1px solid var(--book-line);
+}
+
+.nav-menu h3.title,
+.nav-panel-explore .component .title,
+.toc .toc-menu h3 {
+  color: var(--book-green);
+}
+
+.is-current-page > .nav-link,
+.is-current-page > .nav-text,
+.doc a,
+.toolbar a:hover {
+  color: var(--book-teal);
+}
+
+.doc {
+  background: rgba(255, 253, 248, 0.86);
+  border: 1px solid rgba(24, 58, 55, 0.1);
+  box-shadow: 0 18px 44px rgba(24, 35, 33, 0.08);
+  color: var(--book-ink);
+  margin-top: 2rem;
+  padding: 0 1.4rem 4rem;
+}
+
+.doc h1,
+.doc h2,
+.doc h3,
+.doc h4,
+.doc h5,
+.doc h6 {
+  color: var(--book-green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.doc h2:not(.discrete) {
+  border-bottom-color: var(--book-line);
+}
+
+.doc p {
+  color: var(--book-ink);
+}
+
+.footer {
+  border-top: 1px solid var(--book-line);
+}
+
+footer.footer {
+  background: var(--book-green);
+  color: rgba(255, 253, 248, 0.76);
+}
+
+footer.footer a {
+  color: #fffdf8;
+  font-weight: 700;
+}
+
+footer.footer a:hover {
+  color: #fff;
 }
 
 /* Page-like block for story pages */
@@ -52,6 +180,8 @@ img.fullbleed {
 /* Hero page with text overlay at bottom */
 .hero-page {
   position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(24, 35, 33, 0.16);
 }
 .hero-page img {
   width: 100%;
@@ -88,11 +218,205 @@ img.fullbleed {
   .hero-caption { color: #f7f7f7; }
 }
 
+body.landing main.article > .content {
+  display: block;
+}
+
+body.landing .doc {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  max-width: 64rem;
+  padding: 0 1rem 5rem;
+}
+
+body.landing aside.toc.embedded {
+  display: none;
+}
+
+body.landing .doc > h1.page:first-child {
+  color: var(--book-green);
+  font-size: 3.4rem;
+  line-height: 1.02;
+  margin: 2.8rem 0 1.4rem;
+}
+
+.landing-hero > .content {
+  align-items: center;
+  background: var(--book-surface);
+  border: 1px solid rgba(24, 58, 55, 0.14);
+  box-shadow: 0 22px 54px rgba(24, 35, 33, 0.14);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(16rem, 0.95fr) minmax(17rem, 1.05fr);
+  overflow: hidden;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+.landing-hero .imageblock {
+  grid-row: 1 / span 3;
+  margin: 0;
+}
+
+.landing-hero .imageblock .content {
+  text-align: left;
+}
+
+.landing-hero .landing-illustration img {
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(24, 58, 55, 0.18);
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.landing-copy,
+.landing-subcopy,
+.landing-actions {
+  grid-column: 2;
+}
+
+.landing-copy p {
+  color: var(--book-green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.15rem;
+  font-weight: 700;
+  hyphens: none;
+  line-height: 1.13;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.landing-subcopy p {
+  color: var(--book-muted);
+  font-size: 1.05rem;
+  hyphens: none;
+  line-height: 1.65;
+  max-width: 34rem;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.landing-actions p {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.landing-actions a,
+.feature-link a {
+  align-items: center;
+  border-radius: 6px;
+  display: inline-flex;
+  font-weight: 700;
+  line-height: 1.2;
+  min-height: 2.75rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.landing-actions a:first-child,
+.feature-link a {
+  background: var(--book-red);
+  color: #fffdf8;
+}
+
+.landing-actions a + a {
+  background: #eef5f3;
+  color: var(--book-green);
+  box-shadow: inset 0 0 0 1px rgba(45, 102, 112, 0.22);
+}
+
+.landing-actions a:hover,
+.feature-link a:hover {
+  filter: brightness(1.05);
+  text-decoration: none;
+}
+
+body.landing .doc h2:not(.discrete) {
+  border-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+body.landing .sect1 {
+  background: rgba(255, 253, 248, 0.9);
+  border-left: 5px solid var(--book-gold);
+  margin-top: 1.4rem;
+  padding: 1.2rem 1.4rem;
+}
+
+body.landing .sect1 .sectionbody > .paragraph:first-child {
+  margin-top: 0.6rem;
+}
+
+.feature-link p {
+  margin-top: 0.9rem;
+}
+
+@media screen and (max-width: 1023.5px) {
+  .doc {
+    border-left: 0;
+    border-right: 0;
+    margin-top: 0;
+  }
+
+  .navbar-menu {
+    background: var(--book-surface);
+  }
+
+  .navbar-menu .navbar-item {
+    color: var(--book-green);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body.landing .doc > h1.page:first-child {
+    font-size: 2.45rem;
+    margin-top: 1.7rem;
+  }
+
+  .landing-hero > .content {
+    display: block;
+    padding: 0;
+  }
+
+  .landing-hero .paragraph {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .landing-copy p {
+    font-size: 1.75rem;
+  }
+
+  .landing-subcopy p {
+    font-size: 1rem;
+  }
+
+  .landing-actions p {
+    align-items: stretch;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .landing-actions a,
+  .feature-link a {
+    justify-content: center;
+    width: 100%;
+  }
+
+  body.landing .sect1 {
+    padding: 1rem;
+  }
+}
+
 @media print {
   body {
     font-size: 18px;
     line-height: 1.7;
   }
 }
-
-
