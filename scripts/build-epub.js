@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 const path = require('path');
 const fs = require('fs');
-const Epub = require('epub-gen');
+const { pathToFileURL } = require('url');
+const epub = require('epub-gen-memory').default;
 
 const buildDir = path.resolve(__dirname, '..', 'build');
 const bookFile = path.resolve(__dirname, '..', 'book', 'book.adoc');
@@ -16,7 +17,7 @@ function absolutizeImageSrc(docHtml) {
   return String(docHtml).replace(/<img\s+([^>]*?)src=["']([^"']+)["']([^>]*)>/gi, (m, pre, src, post) => {
     if (/^(data:|https?:|file:|\/)/i.test(src)) return m;
     const absPath = path.join(imagesDir, src);
-    return `<img ${pre}src="${absPath}"${post}>`;
+    return `<img ${pre}src="${pathToFileURL(absPath).href}"${post}>`;
   });
 }
 async function main() {
@@ -25,11 +26,10 @@ async function main() {
   const option = {
     title: 'Hackfables',
     author: 'Hackfables Contributors',
-    output: outFile,
     css,
-    content: [{ title: 'Hackfables', data: absolutizeImageSrc(html) }]
   };
-  await new Epub(option).promise;
+  const content = [{ title: 'Hackfables', content: absolutizeImageSrc(html) }];
+  fs.writeFileSync(outFile, await epub(option, content));
   console.log(`EPUB generated at ${outFile}`);
 }
 
