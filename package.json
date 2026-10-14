@@ -22,6 +22,6 @@
     "rimraf": "^5.0.5"
   },
   "dependencies": {
-    "epub-gen": "^0.1.0"
+    "epub-gen-memory": "^1.1.2"
   }
 }
