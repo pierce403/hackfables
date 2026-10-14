@@ -4,7 +4,7 @@ Short parables for hackers, published as a book-like site via Antora and exporta
 
 ## Prerequisites
 
-- Node.js 18+ (or 20+ recommended)
+- Node.js 24+
 
 ## Install
 

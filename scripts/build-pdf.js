@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 const path = require('path');
 const fs = require('fs');
-const asciidoctor = require('@asciidoctor/core')();
 const puppeteer = require('puppeteer');
 
 (async () => {
+  const { convert } = await import('@asciidoctor/core');
   const buildDir = path.resolve(__dirname, '..', 'build');
   const bookFile = path.resolve(__dirname, '..', 'book', 'book.adoc');
   const outFile = path.join(buildDir, 'book.pdf');
@@ -13,7 +13,7 @@ const puppeteer = require('puppeteer');
 
   if (!fs.existsSync(buildDir)) fs.mkdirSync(buildDir, { recursive: true });
 
-  const html = asciidoctor.convert(fs.readFileSync(bookFile, 'utf8'), {
+  const html = await convert(fs.readFileSync(bookFile, 'utf8'), {
     safe: 'safe',
     backend: 'html5'
   });
@@ -52,7 +52,7 @@ const puppeteer = require('puppeteer');
   });
   const page = await browser.newPage();
 
-  await page.setContent(String(htmlWithCss), { waitUntil: 'networkidle0' });
+  await page.setContent(String(htmlWithCss), { waitUntil: 'load', timeout: 120000 });
 
   await page.pdf({
     path: outFile,
