@@ -11,3 +11,8 @@ commits are separate identities. A stale-main check and non-forced branch update
 prevent older CI output from replacing newer source. No runtime, benchmark,
 firmware, APK, or signing behavior is changed by this hosting-only migration.
 Usage uses zone request metrics with no browser analytics.
+
+The public-output mirror checks out only cloudflare/ and wrangler.jsonc. The
+legacy .antora-ui gitlink has no .gitmodules entry and breaks checkout auth cleanup
+in a full second checkout. Keep it outside this static-only job; the original
+Antora/UI build and its existing recovery workflow remain unchanged.
