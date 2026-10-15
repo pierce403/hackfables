@@ -1,5 +1,240 @@
 {
   "repository": "pierce403/hackfables",
+  "sourceRevision": "8fb42d2d42b7be5454f04c763efab6538af8105e",
   "branch": "codex/cloudflare-static",
-  "bootstrapOnly": true
+  "workflow": "pierce403/hackfables/.github/workflows/gh-pages.yml@refs/heads/main",
+  "runId": "38665570518",
+  "runAttempt": "1",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "404.html",
+      "bytes": 2778,
+      "sha256": "e989036bbb5b686a00c36ab6249db93b75753d1dfd2bff89485dcb0468f26db9"
+    },
+    {
+      "path": "CNAME",
+      "bytes": 15,
+      "sha256": "962837d2c44618cd9636a577be762d907b67be0999d3effd72b5d89d1ede9eb3"
+    },
+    {
+      "path": "HackFables.pdf",
+      "bytes": 25037874,
+      "sha256": "44286a4e0876750d51915d674f9a3435aac302d0f509294e32864e140e589e2d"
+    },
+    {
+      "path": "_/_/css/childrens-book.css",
+      "bytes": 7965,
+      "sha256": "4a6fd7ccc08711f159e5be332722761033007d09fe1c09ff2cc35c47c9ccf646"
+    },
+    {
+      "path": "_/css/childrens-book.css",
+      "bytes": 7965,
+      "sha256": "4a6fd7ccc08711f159e5be332722761033007d09fe1c09ff2cc35c47c9ccf646"
+    },
+    {
+      "path": "_/css/site.css",
+      "bytes": 39140,
+      "sha256": "e0593ae9ceb40ff5268d04cbad8fc7791d984548a6c02cfb10766eef4d951d06"
+    },
+    {
+      "path": "_/font/roboto-cyrillic-400-italic.woff2",
+      "bytes": 10292,
+      "sha256": "a6933e678530b263486fa7b185a449cac947e1496ef61d496642032f339e9e43"
+    },
+    {
+      "path": "_/font/roboto-cyrillic-400-normal.woff2",
+      "bytes": 9628,
+      "sha256": "495d38d4b9741e8aa4204002414069e2d8db9f3c60b60e195e4d74381462dee9"
+    },
+    {
+      "path": "_/font/roboto-cyrillic-500-italic.woff2",
+      "bytes": 10640,
+      "sha256": "6deb20301c65a96db17c433ad0cf8158cc434cba08c94f9b91814ea0fece024e"
+    },
+    {
+      "path": "_/font/roboto-cyrillic-500-normal.woff2",
+      "bytes": 9840,
+      "sha256": "3728fbdd191d75bad5b83a838dfe2fc15f84c2aaa36ffa573321275847db31a9"
+    },
+    {
+      "path": "_/font/roboto-latin-400-italic.woff",
+      "bytes": 22048,
+      "sha256": "93e33cb4a9a337fa9f1e1eb6b64d379bee2336d847975fd83ff5c2103a3bdf60"
+    },
+    {
+      "path": "_/font/roboto-latin-400-italic.woff2",
+      "bytes": 17368,
+      "sha256": "db0424fb67fb52e7e538490240cc7fb9c05aa076333a4968f3dee30b825dabf9"
+    },
+    {
+      "path": "_/font/roboto-latin-400-normal.woff",
+      "bytes": 20344,
+      "sha256": "f2abf7fbabe298e5823d257e48f5dc2138c6d5e0c210066f76b0067e8eda194f"
+    },
+    {
+      "path": "_/font/roboto-latin-400-normal.woff2",
+      "bytes": 15744,
+      "sha256": "f6734f8177112c0839b961f96d813fcb189d81b60e96c33278c1983b6f419615"
+    },
+    {
+      "path": "_/font/roboto-latin-500-italic.woff",
+      "bytes": 22092,
+      "sha256": "3e0a2b52b298a629a943d7b31a7654aefe8fc7f0093428782a33cca2b789797b"
+    },
+    {
+      "path": "_/font/roboto-latin-500-italic.woff2",
+      "bytes": 17336,
+      "sha256": "661d4b208656c006e7aab58acf7784857963123675de2302279fbe6c05313547"
+    },
+    {
+      "path": "_/font/roboto-latin-500-normal.woff",
+      "bytes": 20544,
+      "sha256": "9ce7f3ac47b91743893a2d29fe511a7ebec7aef52b2ea985fa127448d1f227c1"
+    },
+    {
+      "path": "_/font/roboto-latin-500-normal.woff2",
+      "bytes": 15920,
+      "sha256": "b019538234514166ec7665359d097403358f8a4c991901983922fb4d56989f1e"
+    },
+    {
+      "path": "_/font/roboto-mono-latin-400-normal.woff",
+      "bytes": 15160,
+      "sha256": "dffdffa7ddf7183c3917a599634aa40170ae9f74ae6c5a9418dd58c8d807139e"
+    },
+    {
+      "path": "_/font/roboto-mono-latin-400-normal.woff2",
+      "bytes": 12312,
+      "sha256": "7295944e0067d71c5d5276d397dc0299afb519f277ba644aec0b96343e4185d1"
+    },
+    {
+      "path": "_/font/roboto-mono-latin-500-normal.woff",
+      "bytes": 15364,
+      "sha256": "059135a4d76560e8e6281cfe2680d05512e505ef8f3ec5b8a2af39c259b89679"
+    },
+    {
+      "path": "_/font/roboto-mono-latin-500-normal.woff2",
+      "bytes": 12532,
+      "sha256": "2ab75783ac5d62ae726f80e5ff075d0ba60c7164d2cad88da874344f313e014f"
+    },
+    {
+      "path": "_/img/back.svg",
+      "bytes": 190,
+      "sha256": "f0f6cda52ccebaeb6250ea56a302cfd37f7dc1ef4e2b7dfbe3b41a11a299082f"
+    },
+    {
+      "path": "_/img/caret.svg",
+      "bytes": 219,
+      "sha256": "be7d76bd7d86ad34b1de7b514913754c8ff557fea59f7b7fccecef0094d376e3"
+    },
+    {
+      "path": "_/img/chevron.svg",
+      "bytes": 182,
+      "sha256": "6a864f6c99713d2fce320bc673fa548878b5b0597764e37347fc22bcb8a55c62"
+    },
+    {
+      "path": "_/img/home-o.svg",
+      "bytes": 328,
+      "sha256": "69b7acc66f1c0c6483f904ad3e93886b37a3580e54d13ecca7dc6ceea5d2cf97"
+    },
+    {
+      "path": "_/img/home.svg",
+      "bytes": 404,
+      "sha256": "44756fe3860339be31cc6a7b11131c5194cdeaa45b059ba587aa7e66e09cf4c0"
+    },
+    {
+      "path": "_/img/menu.svg",
+      "bytes": 604,
+      "sha256": "945738f3a4bca85557d44e87fb760da31e5f9059d6e3eb0de3e2a1240478115a"
+    },
+    {
+      "path": "_/img/octicons-16.svg",
+      "bytes": 2118,
+      "sha256": "a82a2f21a8a54717d92a5bb57e16077c3e07f22d9a7bcc0d3db77864b054be1f"
+    },
+    {
+      "path": "_/js/site.js",
+      "bytes": 9679,
+      "sha256": "cef3d47e25a1e4cc54a4c206cfdcc6b5e7b05a4ed8da7add91bdb40b0d831247"
+    },
+    {
+      "path": "_/js/vendor/highlight.js",
+      "bytes": 90669,
+      "sha256": "a436494bc5931c15a5499a401f0e5e37db37c08504caffb2516feaa947bc2c26"
+    },
+    {
+      "path": "hackfables/_images/clocktower.png",
+      "bytes": 3118084,
+      "sha256": "2ee8dbe0295933694946561384e5e38c3dcffab64381824d14794c4079eb78d1"
+    },
+    {
+      "path": "hackfables/_images/cobblestones.png",
+      "bytes": 2795158,
+      "sha256": "3716e9e7169bc0c8378952076ee58ed0809713a7853808a3f528af8ff3042445"
+    },
+    {
+      "path": "hackfables/_images/cookie-sidejack.png",
+      "bytes": 2822813,
+      "sha256": "1c7fdcac04949b6ab31420e6feecd0705f87f63d12a563a6d545c9896d748f67"
+    },
+    {
+      "path": "hackfables/_images/criminals.png",
+      "bytes": 3198235,
+      "sha256": "cd7afe343132e834567b85dacf321350c31c43fd6b4ae0cc2c984a483638e11b"
+    },
+    {
+      "path": "hackfables/_images/firesheep.png",
+      "bytes": 3156232,
+      "sha256": "416efcff67f0f72156c5036ef8faf92bc528d8c32e4811828b81c71b12a72617"
+    },
+    {
+      "path": "hackfables/_images/hamster-ferret.png",
+      "bytes": 2936559,
+      "sha256": "73aa1ceed86e1d834b57b569569ef473a11de317b86041316e1b4870cf1ce24e"
+    },
+    {
+      "path": "hackfables/_images/playing.png",
+      "bytes": 2999627,
+      "sha256": "06970bc2b7c3fbf7493362e5177e0348c32f16a3d01dc527759d3eac56b25708"
+    },
+    {
+      "path": "hackfables/_images/responsible-disclosure.png",
+      "bytes": 3138036,
+      "sha256": "23e3e1583b97ffe8558cc263960c572539a0c719d7f478e27e61bb1ae5841674"
+    },
+    {
+      "path": "hackfables/hamster-ferret-firesheep.html",
+      "bytes": 8174,
+      "sha256": "591d83ad05089fa965bfc3086d455a161e9324d6413c3625484615097ccede3a"
+    },
+    {
+      "path": "hackfables/preface.html",
+      "bytes": 5232,
+      "sha256": "c6153dcb86841e33c84baace119abd7a7957759a7fbf0f1ef6d132c7f4bfcfad"
+    },
+    {
+      "path": "hamster-ferret-firesheep.html",
+      "bytes": 8203,
+      "sha256": "0934a96313328fc7fb0dc2e821a5a37900b5a0cfe844e5b1f59ae78fd0d5231d"
+    },
+    {
+      "path": "index.html",
+      "bytes": 5261,
+      "sha256": "0f1787769424d4b44179e91ac5867d46906a94d90bd8d1834ebb6cfc581b7514"
+    },
+    {
+      "path": "preface.html",
+      "bytes": 5261,
+      "sha256": "0f1787769424d4b44179e91ac5867d46906a94d90bd8d1834ebb6cfc581b7514"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 357,
+      "sha256": "108bc95553a995ce7e1312f1f1388829a3763715c2d0d328d9a02444c50fee42"
+    }
+  ]
 }
