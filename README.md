@@ -113,3 +113,7 @@ a matching source revision (or the canonical FrogAlert metadata-child receipt),
 then verifies all public hashes. Missing/failed canonical output stops deployment
 and retains the working version. The generated branch distributes public build
 input only. No GitHub lookup is added to the deployed website.
+
+The initial native Worker staging build passed canonical public-file hash checks
+before custom-domain routing. This follow-up main commit verifies automatic Git
+publishing through the unchanged book validation pipeline.
