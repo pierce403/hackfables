@@ -114,6 +114,6 @@ then verifies all public hashes. Missing/failed canonical output stops deploymen
 and retains the working version. The generated branch distributes public build
 input only. No GitHub lookup is added to the deployed website.
 
-The initial native Worker staging build passed canonical public-file hash checks
-before custom-domain routing. This follow-up main commit verifies automatic Git
-publishing through the unchanged book validation pipeline.
+A normal main commit verifies automatic Git publishing through the unchanged
+book validation pipeline. Custom-domain routing remains gated on successful
+native deployment and actual Worker-host public-file hash checks.
