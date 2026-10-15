@@ -82,7 +82,7 @@ jobs:
           script: |
             const fs = require('node:fs/promises');
             const path = require('node:path');
-            const files = ['cloudflare/package.json', 'cloudflare/package-lock.json', 'cloudflare/build-site.mjs', 'cloudflare/mirror-native.mjs', 'cloudflare/extract-pages.py', 'cloudflare/site-config.json', 'wrangler.jsonc'];
+            const files = ['cloudflare/package.json', 'cloudflare/package-lock.json', 'cloudflare/build-site.mjs', 'cloudflare/fetch-canonical.mjs', 'cloudflare/mirror-native.mjs', 'cloudflare/extract-pages.py', 'cloudflare/site-config.json', 'wrangler.jsonc'];
             for (const file of files) {
               const { data } = await github.rest.repos.getContent({ ...context.repo, path: file, ref: process.env.SOURCE_SHA });
               if (data.type !== 'file' || data.path !== file || data.encoding !== 'base64') throw new Error('Publishing source mismatch');

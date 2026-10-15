@@ -12,3 +12,4 @@ dist/
 /cloudflare/node_modules/
 /cloudflare/.wrangler/
 /dist/
+/tmp/
