@@ -7,3 +7,8 @@ vendor/
 .DS_Store
 dist/
 .env
+
+# Isolated native static publishing
+/cloudflare/node_modules/
+/cloudflare/.wrangler/
+/dist/

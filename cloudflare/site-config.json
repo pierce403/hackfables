@@ -1,0 +1,10 @@
+{
+  "repository": "pierce403/hackfables",
+  "worker": "hackfables-org",
+  "domain": "hackfables.org",
+  "branch": "codex/cloudflare-static",
+  "requiredFiles": [
+    "index.html",
+    "HackFables.pdf"
+  ]
+}
