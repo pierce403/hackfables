@@ -24,3 +24,9 @@ a matching source revision (or the canonical FrogAlert metadata-child receipt),
 then verifies all public hashes. Missing/failed canonical output stops deployment
 and retains the working version. The generated branch distributes public build
 input only. No GitHub lookup is added to the deployed website.
+
+Cloudflare also initializes submodules before any build command. The unused
+.antora-ui gitlink782311344b54aaa734d4c86629b8cd75e4da36d6 had no .gitmodules
+entry and prevented cloning. It is now untracked and ignored; any local cache
+and all Git history remain. Antora still uses the unchanged tracked
+ui/ui-bundle.zip, so no UI source or output is replaced by this repair.

@@ -13,3 +13,4 @@ dist/
 /cloudflare/.wrangler/
 /dist/
 /tmp/
+/.antora-ui/
