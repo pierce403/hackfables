@@ -7,7 +7,7 @@ const root=resolve(import.meta.dirname,'..');
 const configuration=JSON.parse(await readFile(resolve(root,'cloudflare/site-config.json'),'utf8'));
 const artifact=resolve(process.argv[2]||'');
 if(!process.argv[2]||artifact===root||!artifact.startsWith(root+'/'))throw Error('Explicit repository-local public artifact required');
-const sourceRevision=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
+const sourceRevision=process.env.CLOUDFLARE_SOURCE_REVISION||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 if(!/^[a-f0-9]{40}$/.test(sourceRevision))throw Error('Invalid source revision');
 const files=[];
 async function inventory(directory){
