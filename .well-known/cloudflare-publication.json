@@ -1,10 +1,10 @@
 {
   "repository": "pierce403/hackfables",
-  "sourceRevision": "1b011d0c05f24576f2d76ace43826cea9881e551",
-  "triggerRevision": "1b011d0c05f24576f2d76ace43826cea9881e551",
+  "sourceRevision": "e1d329ce29d3c2756c796440e5e19bfaa8e7765c",
+  "triggerRevision": "e1d329ce29d3c2756c796440e5e19bfaa8e7765c",
   "branch": "codex/cloudflare-static",
   "workflow": "pierce403/hackfables/.github/workflows/gh-pages.yml@refs/heads/main",
-  "runId": "38668214486",
+  "runId": "38668421099",
   "runAttempt": "1",
   "files": [
     {
@@ -25,7 +25,7 @@
     {
       "path": "HackFables.pdf",
       "bytes": 25037874,
-      "sha256": "2252d7c094377835e42c880f16d93f99d7946f95d8bf5b2714cb1a289955707a"
+      "sha256": "68d91d21a7f6a76ee2cd1243e75a0a98c38c54525c34f40f06c9df9c18c39c48"
     },
     {
       "path": "_/_/css/childrens-book.css",
@@ -235,7 +235,7 @@
     {
       "path": "sitemap.xml",
       "bytes": 357,
-      "sha256": "c5cfbba0263bde6b0415d4b0b3ce36a6e7a207610217be9fb099896fea26493c"
+      "sha256": "5ef0e2c0daed675b84be047fe61f93ca9dd1b322862751449ba63b57e409ee9a"
     }
   ]
 }
